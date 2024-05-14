@@ -9,20 +9,23 @@
 }
 
 body{
-	background: linear-gradient(to right, #3525af, #9153c9);
+	/* background: linear-gradient(to right, #3525af, #9153c9); */
+	background: #fff;
 }
 
 .resume{
-	width: 800px;
+	/* width: 800px; */
+
 	background: #fff;
-	margin: 25px auto;
+	/* margin: 25px auto; */
 	display: flex;
 }
 
 .left{
+	/* display: flexbox; */
 	background: #292b2f;
-	width: 250px;
-	padding: 0 20px;
+	width: 40%;
+	padding: 0 50px;
 }
 
 .right{
@@ -30,13 +33,21 @@ body{
 }
 
 .left .img_holder{
+	/* width: 200px; */
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	/* border-radius: 10px; */
+	/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 	text-align: center;
-	padding: 20px 0;
+	margin: 20px 0;
 }
 
 .left .img_holder img{
 	width: 200px;
 	border-radius: 30px;
+	filter: drop-shadow(20px 5px 4px #4444dd);
 }
 
 .pb{
@@ -49,7 +60,7 @@ body{
 	text-transform: uppercase;
 	letter-spacing: 5px;
 	padding-bottom: 10px;
-	color:lightblue;
+	color:aqua;
 	position: relative;
 	text-align: right;
 	margin-bottom: 15px;
@@ -66,12 +77,12 @@ body{
 }
 
 .left .icon{
-	font-size: 20px;
+	font-size: 30px;
 	color: #9153c9;
 }
 .left .text{
 	color: #9153c9;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	font-size: 13px;
 }
 
@@ -98,8 +109,8 @@ body{
 }
 
 .contact .li_wrap .icon{
-	width: 50px;
-	height: 50px;
+	width: 70px;
+	height: 60px;
 	background: #fff;
 	border-radius: 15px;
 	display: flex;
@@ -136,7 +147,9 @@ body{
 .skills .li_wrap{
 	background: #fff;
 }
-
+.skills .li_wrap:hover{
+	background: cyan;
+}
 .skills .li_wrap .text,
 .hobbies .li_wrap .text{
 	margin-top: 5px;
@@ -162,8 +175,9 @@ body{
 
 .header{
 	background: #292b2f;
-	padding: 15px 30px;
+	padding: 20px 30px;
 	color: #fff;
+	text-align: center;
 	height: 260px;
 }
 
@@ -171,12 +185,17 @@ body{
 	font-size: 52px;
 	text-transform: uppercase;
 	font-weight: 700;
-	color: lightblue;
+	color: aqua;
 }
 
 .header .role{
-	font-weight: 300;
 	font-size: 20px;
+	font-weight: 600;
+}
+.header .role2{
+	font-weight: 600;
+	
+
 }
 
 .header .about{
